@@ -10,7 +10,7 @@
 }
 
 #btnToTop{
-    @apply fixed right-2 bottom-2 w-14 h-14 z-20 bg-base-3 active:bg-base-2 shadow-xl text-white rounded-full cursor-pointer
+    @apply right-2 bottom-2 w-14 h-14 z-20 bg-base-2 active:bg-base-3 shadow-xl text-white rounded-full cursor-pointer
 }
 
 .h3{
