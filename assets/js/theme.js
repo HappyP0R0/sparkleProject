@@ -32,7 +32,6 @@ window.onscroll = function(e){
     btnToTop.style.top = container_top.offsetHeight;
   }
   else if ((window.scrollY + window.innerHeight) < (window.pageYOffset + btnToTop.getBoundingClientRect().top)){
-    console.log("NOOOOOOOOOOOOOOOOWWWWWWWWWWWWWWWWWWWW");
     btnToTop.classList.add("fixed");
     btnToTop.classList.remove("absolute");
     btnToTop.style.top = null;
