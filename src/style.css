@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbtn{
+    @apply m-2 p-2 mt-8 
+}
+
+#btnToTop{
+    @apply fixed right-2 bottom-2 w-14 h-14 z-20 bg-base-3 active:bg-base-2 shadow-xl text-white rounded-full cursor-pointer
+}
+
+.h3{
+    @apply font-oswald text-h3txt uppercase font-medium text-base-1
+}
+.h2{
+    @apply font-oswald text-h2txt uppercase font-medium text-base-1
+}
+
+.p12{
+    line-height: 0.914rem;
+    @apply font-mons text-xs font-medium 
+}
+
+.p14{
+    line-height: 1.067rem;
+    @apply font-mons text-sm font-medium 
+}
+
+.p18{
+    line-height: 1.371rem;
+    @apply font-mons text-lg font-medium
+}
+
+.p24{
+    line-height: 1.829rem;
+    @apply font-mons text-2xl font-medium 
+}
+
+.casbtn{
+    @apply rounded-full bg-base-2 hover:bg-base-3 py-3 text-white
+}
+
+.input {
+    background-color: rgba(196, 196, 196, 0.4);
+    @apply placeholder-base-1 opacity-40 p-2 rounded-md
+}
+
+.links>*{
+    padding: 0.656rem;
+}
+
+.sup_bg{
+    background-position: center; background-repeat: no-repeat; background-size: 100% 100%;
+}
+@media (max-width: 1023px) {
+    .socials_small>p {
+        margin: 5px 0 ;
+    }
+    .sup_bg{
+        background-size: cover;
+    }
+    .navbtn{
+        @apply w-full
+    }
+    .active{
+        text-decoration:underline #FFA800 solid;
+        text-decoration-thickness: 3px;
+        text-underline-offset: 3px;
+    }
+}
+@media (min-width:1024px) {
+    .lgp18{
+        line-height: 1.371rem;
+        @apply font-mons text-lg font-medium
+    }
+    .lgp24{
+        line-height: 1.829rem;
+        @apply font-mons text-2xl font-medium 
+    }
+}
+
+
